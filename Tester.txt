@@ -363,12 +363,12 @@ end
 end)
 
 local Dev = Tap3:Section("- Giới thiệu -","Left")
-
 Dev:Label("Hub làm bởi gamer144(huy) và fries(owen fries hub)")
+end)
 
 Local Tap2 = Tap3:Section("- Mô Tả -","right")
-
 Dev:Label("Mong các yt review hub tui")
+end)
 
 local SlayerzUI_Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Notification.script"))()
 local NameHub = "Thông Báo"
