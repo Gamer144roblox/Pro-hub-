@@ -56,6 +56,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Zekrom-H
 end)
 
 local Key = Tap1:Section("Key","Right")
+Key:Label("Apple Hub")
 
 Key:Dropdown("Apple Hub",{"Tiếng Việt","Tiếng Anh"},{"Select Dropdown"},function(v)
     _G.AppleHub = v -- Callback Function "v" is string value
