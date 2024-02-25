@@ -11,6 +11,7 @@ local Window = SlayerzLibrary:Window(Name,Description,Image,Color)
 
 local Tap1 = Window:Tab("Blox fruits")
 local Tap2 = Window:Tab("Misc")
+Local Tap3 = Window:Tab("Giới Thiệu và mô tả")
 
 
 local BF = Tap1:Section("- No Key -","Left")
@@ -56,24 +57,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Zekrom-H
 end)
 
 local Key = Tap1:Section("Key","Right")
-Key:Label("Apple Hub")
-
-Key:Dropdown("Apple Hub",{"Tiếng Việt","Tiếng Anh"},{"Select Dropdown"},function(v)
-    _G.AppleHub = v -- Callback Function "v" is string value
-end)
-task.spawn(function()
-	while wait() do
-		pcall(function()
-			if _G.AppleHub == "Tiếng Việt" then
-	 _G.TienTiny = "VietNam"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ee63c4813439ce89a9d2bef4ce25a627.lua"))()
-			elseif _G.AppleHub == "Tiếng Anh" then
-				_G.TienTiny = "English"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ee63c4813439ce89a9d2bef4ce25a627.lua"))()
-						end
-end)
-end
-end)
 
 Key:Button("Hoho Hub V3",function()
 
@@ -379,6 +362,13 @@ while plr.Data.Beli.Value - EXPFunction(Data.Level.Value) > 0 do
 end
 end)
 
+local Dev = Tap3:Section("- Giới thiệu -","Left")
+
+Dev:Label("Hub làm bởi gamer144(huy) và fries(owen fries hub)")
+
+Local Tap2 = Tap3:Section("- Mô Tả -","right")
+
+Dev:Label("Mong các yt review hub tui")
 
 local SlayerzUI_Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Notification.script"))()
 local NameHub = "Thông Báo"
