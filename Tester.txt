@@ -1,3 +1,7 @@
+-- Put this on top of script
+local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
+SlayerzUI_MobileToggle:Create("rbxassetid://16471178798") -- Image Id
+
 local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/BetaLibrary.script"))()
 
 local Name = "Phonk Hub"
