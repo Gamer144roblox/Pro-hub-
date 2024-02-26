@@ -1,5 +1,27 @@
+getgenv().AntiLag = true
+local Set = 100
+local SetFPSHigh = 9e9
+function SetHighFPS(v)
+  return setfpscap(v or Set, SetFPSHigh)
+end
+task.spawn(function()
+    while task.wait() do
+      if getgenv().AntiLag then
+        SetHighFPS(100)
+      end
+    end
+  end) 
+  Loacl().AntiLag [Lock Fps]
+     GetGen= 120
+  end
+end
+   end 
+end
+     end 
+        end
+
 local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
-SlayerzUI_MobileToggle:Create("rbxassetid://16471178798") -- Image Id
+SlayerzUI_MobileToggle:Create("rbxassetid://16471178798")
 
 local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/BetaLibrary.script"))()
 
