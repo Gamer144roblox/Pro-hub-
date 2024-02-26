@@ -24,6 +24,12 @@ BF:Button("Speed Hub X",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
 end)
 
+BF:Button("Xero Hub",function()
+
+getgenv().Team = "Marines" -- Pirates/Marines
+loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/main/main.lua"))()
+end)
+
 BF:Button("Ripper",function()
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/Module/main/Mobile_Script.lua'))()
