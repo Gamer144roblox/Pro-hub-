@@ -28,6 +28,16 @@ BF:Button("Ripper",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/Module/main/Mobile_Script.lua'))()
 end)
 
+BF:Button("Mbm V2",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/0135"))()
+end)
+
+BF:Button("Redz Hub",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
 BF:Button("PayBack Hub",function()
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Script-Blox/Script/main/PayBack.lua'))()
@@ -52,6 +62,11 @@ end)
 BF:Button("Zekrom Hub v2.05",function()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Zekrom-Hub-X/main/Zekrom-Hub-X-exe"))()
+end)
+
+BF:Button("Wolf hub",function()
+
+loadstring(game:HttpGet('https://link.trwxz.com/LS-Wolf-Hub'))()
 end)
 
 local Key = Tap1:Section("Key","Right")
