@@ -1,16 +1,19 @@
 -- Put this on top of script
+
 local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
 SlayerzUI_MobileToggle:Create("rbxassetid://16471178798") -- Image Id
 
-local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/BetaLibrary.script"))()
 
+
+local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/BetaLibrary.script"))()
 local Name = "Phonk Hub"
-local Description = "Script make in Admin and fries"
+local Description = "Script make in Admin and Khoai Tây Chiên"
 local Image = "rbxassetid://16471178798"
 local Color = Color3.fromRGB(255, 0, 0)
 local Window = SlayerzLibrary:Window(Name,Description,Image,Color)
 
 local Tap1 = Window:Tab("Blox fruits")
+local Tap3 = Window:Tab("Music")
 local Tap2 = Window:Tab("Misc")
 
 local BF = Tap1:Section("- No Key -","Left")
@@ -20,77 +23,108 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Frieshup/FriesHup/mai
 end)
 
 BF:Button("Speed Hub X",function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
 end)
 
 BF:Button("Xero Hub",function()
-
 getgenv().Team = "Marines" -- Pirates/Marines
 loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/main/main.lua"))()
 end)
 
 BF:Button("Ripper",function()
-
 loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/Module/main/Mobile_Script.lua'))()
 end)
 
 BF:Button("Mbm V2",function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/0135"))()
 end)
 
 BF:Button("Redz Hub",function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
 end)
 
 BF:Button("PayBack Hub",function()
-
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Script-Blox/Script/main/PayBack.lua'))()
 end)
 
 BF:Button("Faifao V3",function()
-
 loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua")()
 end)
 
 BF:Button("W-azure True V2",function()
-
 getgenv().Team = "Pirates"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 end)
 
 BF:Button("Doremon Hub (Master Hub)",function()
-
 loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
 end)
 
 BF:Button("Zekrom Hub v2.05",function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Zekrom-Hub-X/main/Zekrom-Hub-X-exe"))()
 end)
 
 BF:Button("Wolf hub",function()
-
 loadstring(game:HttpGet('https://link.trwxz.com/LS-Wolf-Hub'))()
 end)
 
 local Key = Tap1:Section("Key","Right")
 
 Key:Button("Hoho Hub V3",function()
-
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Free/BloxFruitFreeV3.lua'))()
 end)
 
 Key:Button("Roxy Hub",function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/Donate-Me/main/free%20bf.lua"))()
 end)
 
 Key:Button("Perd Hub",function()
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PerdHub/Blosfruitscript/main/PerdLoader"))()
+end)
+
+local Mu = Tap3:Section("Nhạc Phonk","Left")
+
+Mu:Dropdown("Chọn Nhạc",{"Brazilian Phonk","DJ ZK3","MONTAGEM"},{"Select Dropdown"},function(v)
+  _G.Muisc = v
+end)
+task.spawn(function()
+	while wait() do
+		pcall(function()
+			if _G.Muisc == "Brazilian Phonk" then
+	 local Brazilian = Instance.new("Sound")
+		Brazilian.Parent = game:GetService("Workspace")
+		Brazilian.SoundId = "rbxassetid://6953866301"
+		Brazilian.Playing = true
+		Brazilian.Looped = true
+		Brazilian.Pitch = 1
+		Brazilian.Volume = 999999
+			elseif _G.Music == "DJ ZK3" then
+				local DJ = Instance.new("Sound")
+		DJ = game:GetService("Workspace")
+		DJ = "rbxassetid://13954356235"
+		DJ.Playing = true
+		DJ.Looped = true
+		DJ.Pitch = 1
+		DJ.Volume = 999999
+		elseif _G.Music == "MONTAGEM" then
+				local O = Instance.new("Sound")
+		O = game:GetService("Workspace")
+		O = "rbxassetid://13968780291"
+		O.Playing = true
+		O.Looped = true
+		O.Pitch = 1
+		O.Volume = 999999		
+						end
+end)
+end
+end)
+
+Mu:Button("Tắt Nhạc",function()
+		for i, b in pairs(game.Workspace:GetChildren()) do
+			if b:IsA("Sound") and b.IsPlaying then
+				b:Stop()
+			end
+		end
 end)
 
 local Farm = Tap2:Section("Farm","Left")
